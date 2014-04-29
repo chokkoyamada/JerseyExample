@@ -10,11 +10,11 @@ import javax.ws.rs.core.MediaType;
  * Date: 2014/04/29
  * Time: 16:39
  */
-@Path("/")
+@Path("/hello")
 public class Hello {
     @GET
     @Produces(MediaType.TEXT_PLAIN)
-    @Path("/")
+    @Path("/world")
     public String sayHello(){
         return "Hello, world.";
     }
